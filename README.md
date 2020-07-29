@@ -3,3 +3,4 @@
 ##### 1、synquery.php 实时查询示例代码
 ##### 2、subscribe.php 订阅请求示例代码
 ##### 3、autonumber.php 智能判断示例代码
+##### 4、sms.php 短信请求示例代码
