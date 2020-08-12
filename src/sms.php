@@ -30,7 +30,7 @@
     $post_data["outorder"] = $outorder;
     $post_data["callback"] = $callback;
 
-    $url = 'http://apisms.kuaidi100.com:9502/sms/send.do';    //获取电子面单
+    $url = 'http://apisms.kuaidi100.com:9502/sms/send.do';    //发送短信请求地址
     
     $params = "";
     foreach ($post_data as $k=>$v) {
