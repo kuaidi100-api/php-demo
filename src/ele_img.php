@@ -38,7 +38,7 @@
     $sign = md5($post_data["param"].$t.$key.$secret);
     $post_data["sign"] = strtoupper($sign);
     
-    $url = 'https://poll.kuaidi100.com/printapi/printtask.do?method=getPrintImg';    //电子面单请求地址
+    $url = 'http://poll.kuaidi100.com/printapi/printtask.do?method=getPrintImg';    //电子面单请求地址
     
     echo '<br/>请求参数<br/>';
     foreach ($post_data as $k=>$v) {
