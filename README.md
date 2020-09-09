@@ -13,3 +13,9 @@
 ##### 3、autonumber.php 智能判断示例代码
 
 ##### 4、sms.php 短信请求示例代码
+
+##### 5、ele_img.php 电子面单返回图片示例代码
+
+##### 6、ele_print.php 电子面单打印示例代码
+
+##### 7、ele_html.php 电子面单返回html内容示例代码
