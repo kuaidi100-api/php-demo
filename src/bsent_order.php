@@ -22,8 +22,8 @@
         'remark' => '',                 //备注
         'salt' => ''                    //签名用随机字符串
     );
-	$param_str = json_encode($param, JSON_UNESCAPED_UNICODE);
-	list($msec, $sec) = explode(' ', microtime());
+    $param_str = json_encode($param, JSON_UNESCAPED_UNICODE);
+    list($msec, $sec) = explode(' ', microtime());
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    //当前时间戳
     $sign = strtoupper(md5($param_str.$t.$key.$secret));
 
