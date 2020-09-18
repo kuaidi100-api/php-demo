@@ -10,8 +10,8 @@
 	$param = array (
         'sendAddr' => '广东省深圳市南山区软件产业基地4栋C座10G'      //寄件人所在的完整地址，可通过：https://api.kuaidi100.com/product/expressprice 查找运力覆盖范围
     );
-	$param_str = json_encode($param, JSON_UNESCAPED_UNICODE);
-	list($msec, $sec) = explode(' ', microtime());
+    $param_str = json_encode($param, JSON_UNESCAPED_UNICODE);
+    list($msec, $sec) = explode(' ', microtime());
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    //当前时间戳
     $sign = strtoupper(md5($param_str.$t.$key.$secret));
 
