@@ -19,3 +19,11 @@
 ##### 6、ele_print.php 电子面单打印示例代码
 
 ##### 7、ele_html.php 电子面单返回html内容示例代码
+
+##### 8、bsent_querymkt.php 商家寄件获取运力接口示例代码
+
+##### 9、bsent_order.php 商家寄件下单接口示例代码
+
+##### 10、bsent_code.php 商家寄件获取取件码接口示例代码
+
+##### 11、bsent_cancel.php 商家寄件取消接口示例代码
