@@ -39,8 +39,7 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $result = curl_exec($ch);
-    $data = str_replace("\"", '"', $result);
-    $data = json_decode($data);
+    $data = json_decode($result);
 
 echo '<br/><br/>返回数据<br/>';
 echo var_dump($data);
