@@ -59,7 +59,6 @@
     $post_data['t'] = $t;
     $sign = md5($post_data['param'].$t.$key.$secret);
     $post_data['sign'] = strtoupper($sign);
-    $post_data['mockKey'] = 'kd100@Mock';
     
     $url = 'http://poll.kuaidi100.com/eorderapi.do?method=getElecOrder';    // 电子打印请求地址
     
