@@ -44,7 +44,7 @@
 
 ##### 19、ent_send.php 订单导入快递单号回传及订单发货接口示例代码
 
-##### 20、1international_order.php 国际电子面单接口示例代码
+##### 20、international_order.php 国际电子面单接口示例代码
 
 ##### 21、bsent_order.php 商家寄件下单接口示例代码
 
