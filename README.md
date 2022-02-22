@@ -16,48 +16,50 @@
 
 ##### 5、ele_print.php 电子面单打印接口示例代码
 
-##### 6、ele_img.php 电子面单图片接口示例代码
+##### 6、ele_printold.php 电子面单复打接口示例代码
 
-##### 7、ele_html.php 电子面单HTML接口示例代码
+##### 7、ele_img.php 电子面单图片接口示例代码
 
-##### 8、ele_third_auth.php 第三方电商平台账号授权接口示例代码
+##### 8、ele_html.php 电子面单HTML接口示例代码
 
-##### 9、ele_cancel.php 电子面单取消接口示例代码
+##### 9、ele_third_auth.php 第三方电商平台账号授权接口示例代码
 
-##### 10、cloud_selfprint.php 云打印自定义打印接口示例代码
+##### 10、ele_cancel.php 电子面单取消接口示例代码
 
-##### 11、cloud_fileprint.php 云打印附件打印接口示例代码
+##### 11、cloud_selfprint.php 云打印自定义打印接口示例代码
 
-##### 12、cloud_img.php 云打印自定义生成图片接口示例代码
+##### 12、cloud_fileprint.php 云打印附件打印接口示例代码
 
-##### 13、cloud_devstatus.php 云打印硬件状态接口示例代码
+##### 13、cloud_img.php 云打印自定义生成图片接口示例代码
 
-##### 14、cloud_command.php 云打印指令打印接口示例代码
+##### 14、cloud_devstatus.php 云打印硬件状态接口示例代码
 
-##### 15、bill_parcels.php 快递发货单打印接口示例代码
+##### 15、cloud_command.php 云打印指令打印接口示例代码
 
-##### 16、ent_auth.php 订单导入获取店铺授权超链接接口示例代码
+##### 16、bill_parcels.php 快递发货单打印接口示例代码
 
-##### 17、ent_order.php 订单导入提交订单获取任务接口示例代码
+##### 17、ent_auth.php 订单导入获取店铺授权超链接接口示例代码
 
-##### 18、ent_send.php 订单导入快递单号回传及订单发货接口示例代码
+##### 18、ent_order.php 订单导入提交订单获取任务接口示例代码
 
-##### 19、1international_order.php 国际电子面单接口示例代码
+##### 19、ent_send.php 订单导入快递单号回传及订单发货接口示例代码
 
-##### 20、bsent_order.php 商家寄件下单接口示例代码
+##### 20、1international_order.php 国际电子面单接口示例代码
 
-##### 21、bsent_cancel.php 商家寄件下单取消接口示例代码
+##### 21、bsent_order.php 商家寄件下单接口示例代码
 
-##### 22、bsent_price.php 商家寄件下单价格接口示例代码
+##### 22、bsent_cancel.php 商家寄件下单取消接口示例代码
 
-##### 23、samecity_auth.php 同城配送账号授权接口示例代码
+##### 23、bsent_price.php 商家寄件下单价格接口示例代码
 
-##### 24、samecity_order.php 同城配送下单接口示例代码
+##### 24、samecity_auth.php 同城配送账号授权接口示例代码
 
-##### 25、samecity_query.php 同城配送查询订单接口示例代码
+##### 25、samecity_order.php 同城配送下单接口示例代码
 
-##### 26、samecity_cancel.php 同城配送取消下单接口示例代码
+##### 26、samecity_query.php 同城配送查询订单接口示例代码
 
-##### 27、sms.php 短信发送接口示例代码
+##### 27、samecity_cancel.php 同城配送取消下单接口示例代码
 
-##### 28、autonumber.php 智能识别接口示例代码
+##### 28、sms.php 短信发送接口示例代码
+
+##### 29、autonumber.php 智能识别接口示例代码
