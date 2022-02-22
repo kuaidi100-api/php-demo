@@ -6,26 +6,58 @@
 > 如果您也使用curl发送请求，需要在php.ini中开启 extension=curl 模块；
 > 该代码只做示例参考使用，您需要根据您当前系统使用的PHP版本做相应的调整和封装，并测试无bug后再上线系统。
 
-##### 1、synquery.php 实时查询示例代码
+##### 1、synquery.php 实时查询接口示例代码
 
-##### 2、subscribe.php 订阅请求示例代码
+##### 2、subscribe.php 订阅请求接口示例代码
 
-##### 3、autonumber.php 智能判断示例代码
+##### 3、map_query.php 快递查询地图轨迹接口示例代码
 
-##### 4、sms.php 短信请求示例代码
+##### 4、map_subscribe.php 地图轨迹订阅接口示例代码
 
-##### 5、ele_img.php 电子面单返回图片示例代码
+##### 5、ele_print.php 电子面单打印接口示例代码
 
-##### 6、ele_print.php 电子面单打印示例代码
+##### 6、ele_img.php 电子面单图片接口示例代码
 
-##### 7、ele_html.php 电子面单返回html内容示例代码
+##### 7、ele_html.php 电子面单HTML接口示例代码
 
-##### 8、bsent_querymkt.php 商家寄件获取运力接口示例代码
+##### 8、ele_third_auth.php 第三方电商平台账号授权接口示例代码
 
-##### 9、bsent_order.php 商家寄件下单接口示例代码
+##### 9、ele_cancel.php 电子面单取消接口示例代码
 
-##### 10、bsent_code.php 商家寄件获取取件码接口示例代码
+##### 10、cloud_selfprint.php 云打印自定义打印接口示例代码
 
-##### 11、bsent_cancel.php 商家寄件取消接口示例代码
+##### 11、cloud_fileprint.php 云打印附件打印接口示例代码
 
-##### 12、map.php 地图轨迹接口示例代码
+##### 12、cloud_img.php 云打印自定义生成图片接口示例代码
+
+##### 13、cloud_devstatus.php 云打印硬件状态接口示例代码
+
+##### 14、cloud_command.php 云打印指令打印接口示例代码
+
+##### 15、bill_parcels.php 快递发货单打印接口示例代码
+
+##### 16、ent_auth.php 订单导入获取店铺授权超链接接口示例代码
+
+##### 17、ent_order.php 订单导入提交订单获取任务接口示例代码
+
+##### 18、ent_send.php 订单导入快递单号回传及订单发货接口示例代码
+
+##### 19、1international_order.php 国际电子面单接口示例代码
+
+##### 20、bsent_order.php 商家寄件下单接口示例代码
+
+##### 21、bsent_cancel.php 商家寄件下单取消接口示例代码
+
+##### 22、bsent_price.php 商家寄件下单价格接口示例代码
+
+##### 23、samecity_auth.php 同城配送账号授权接口示例代码
+
+##### 24、samecity_order.php 同城配送下单接口示例代码
+
+##### 25、samecity_query.php 同城配送查询订单接口示例代码
+
+##### 26、samecity_cancel.php 同城配送取消下单接口示例代码
+
+##### 27、sms.php 短信发送接口示例代码
+
+##### 28、autonumber.php 智能识别接口示例代码

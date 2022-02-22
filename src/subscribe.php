@@ -31,7 +31,7 @@
     $post_data['schema'] = 'json';
     $post_data['param'] = json_encode($param, JSON_UNESCAPED_UNICODE);
     
-    $url = 'http://poll.kuaidi100.com/poll';    // 订阅请求地址
+    $url = 'https://poll.kuaidi100.com/poll';    // 订阅请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
@@ -39,11 +39,13 @@ echo '</pre>';
     
     // 发送post请求
     $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
     $result = curl_exec($ch);
     $data = json_decode($result, true);
 

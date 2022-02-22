@@ -1,18 +1,19 @@
 <?php
     //====================================
-    // 商家寄件下单取消接口
+    // 电子面单第三方电商平台账号授权示例代码
     // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/page/myinfo/enterprise
     //====================================
-	
+
     // 参数设置
-    $key = '';                         // 客户授权key
-    $secret = '';                      // 客户授权secret
+    $key = '';                             // 客户授权key
+    $secret = '';                          // 授权secret
     list($msec, $sec) = explode(' ', microtime());
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    // 当前时间戳
-	$param = array (
-        'taskId' => '',                  // 任务ID
-        'orderId' => '',                 // 订单ID
-        'cancelMsg' => ''                // 取消原因，例：暂时不寄件了
+    $param = array (
+        'net' => '',                       // 请求的第三方平台，仅主账号可授权。淘宝：taobao，菜鸟：cainiao，京东：jdalpha，拼多多：pinduoduoWx，抖店:douyin
+        'callBackUrl' => '',               // 授权完后的信息回调地址，默认仅支持http
+        'partnerId' => '',                 // 已经授权完需要重新获取授权信息
+        'view' => ''                       // web(默认），wap(只有淘宝和菜鸟可以使用）
     );
     
     // 请求参数
@@ -22,14 +23,14 @@
     $post_data['t'] = $t;
     $sign = md5($post_data['param'].$t.$key.$secret);
     $post_data['sign'] = strtoupper($sign);
-
-    $url = 'https://poll.kuaidi100.com/order/borderapi.do?method=cancel';    // 商家寄件下单取消接口地址
+    
+    $url = 'https://poll.kuaidi100.com/printapi/authThird.do';    // 电子面单第三方电商平台账号授权请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
 echo '</pre>';
     
-    //发送post请求
+    // 发送post请求
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, 1);

@@ -1,31 +1,26 @@
 <?php
     //====================================
-    // 实时查询示例代码
+    // 订单导入获取店铺授权超链接示例代码
     // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/page/myinfo/enterprise
     //====================================
 
-    //参数设置
-    $key = '';                        // 客户授权key
-    $customer = '';                   // 查询公司编号
+    // 参数设置
+    $key = '';                             // 客户授权key
+    $secret = '';                          // 授权secret
     $param = array (
-        'com' => 'yunda',             // 快递公司编码
-        'num' => '3950055201640',     // 快递单号
-        'phone' => '',                // 手机号
-        'from' => '',                 // 出发地城市
-        'to' => '',                   // 目的地城市
-        'resultv2' => '1',            // 开启行政区域解析
-        'show' => '0',                // 返回格式：0：json格式（默认），1：xml，2：html，3：text
-        'order' => 'desc'             // 返回结果排序:desc降序（默认）,asc 升序
+        'shopType' => '',                  // 店铺类型，TAOBAO：淘宝，JINGDONG：京东，TOUTIAO：抖店，PINDUODUO：拼多多
+        'callbackUrl' => '',               // 回调地址，默认仅支持http
+        'salt' => ''                       // 回调参数sign的加密参数，非空时回调才会有sign参数
     );
     
-    //请求参数
+    // 请求参数
     $post_data = array();
-    $post_data['customer'] = $customer;
     $post_data['param'] = json_encode($param, JSON_UNESCAPED_UNICODE);
-    $sign = md5($post_data['param'].$key.$post_data['customer']);
+    $post_data['key'] = $key;
+    $sign = md5($post_data['param'].$key.$secret);
     $post_data['sign'] = strtoupper($sign);
     
-    $url = 'https://poll.kuaidi100.com/poll/query.do';    // 实时查询请求地址
+    $url = 'https://api.kuaidi100.com/ent/shop/authorize';    // 订单导入获取店铺授权超链接请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
@@ -41,7 +36,6 @@ echo '</pre>';
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
     $result = curl_exec($ch);
-    // 第二个参数为true，表示格式化输出json
     $data = json_decode($result, true);
 
 echo '<br/><br/>返回数据：<br/><pre>';

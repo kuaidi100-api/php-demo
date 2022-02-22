@@ -38,7 +38,7 @@
         'payType' => 'SHIPPER',            // 支付方式
         'expType' => '标准快递',            // 快递类型: 标准快递（默认）、顺丰特惠、EMS经济
         'remark' => '测试',                // 备注
-        'tempid' => '',                    // 电子面单模板编码
+        'tempid' => '',                    // 电子面单模板编码，通过后台模板管理页面获取：https://api.kuaidi100.com/manager/page/template/eletemplate
         'thirdTemplateURL' => '',          // 第三方平台面单基础模板链接
         'siid' => '',                      // 设备编码
         'valinsPay' => '',                 // 保价额度
@@ -63,7 +63,7 @@
     $sign = md5($post_data['param'].$t.$key.$secret);
     $post_data['sign'] = strtoupper($sign);
     
-    $url = 'http://poll.kuaidi100.com/printapi/printtask.do?method=eOrder';    // 电子面单打印请求地址
+    $url = 'https://poll.kuaidi100.com/printapi/printtask.do?method=eOrder';    // 电子面单打印请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
@@ -71,11 +71,13 @@ echo '</pre>';
     
     //发送post请求
     $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post_data));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
     $result = curl_exec($ch);
     $data = json_decode($result, true);
 

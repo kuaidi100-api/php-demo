@@ -1,6 +1,6 @@
 <?php
     //====================================
-    // 商家寄件下单取消接口
+    // 商家寄件下单价格接口
     // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/page/myinfo/enterprise
     //====================================
 	
@@ -9,10 +9,12 @@
     $secret = '';                      // 客户授权secret
     list($msec, $sec) = explode(' ', microtime());
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    // 当前时间戳
-	$param = array (
-        'taskId' => '',                  // 任务ID
-        'orderId' => '',                 // 订单ID
-        'cancelMsg' => ''                // 取消原因，例：暂时不寄件了
+    $param = array (
+        'kuaidiCom' => '',              // 快递公司的编码
+        'sendManPrintAddr' => '',       // 出发地地址，最小颗粒到市级，例如：广东省深圳市
+        'recManPrintAddr' => '',        // 目的地地址，最小颗粒到市级，例如：广东省深圳市
+        'weight' => '0.5',              // 物品总重量KG，不需带单位
+        'serviceType' => null           // 业务类型
     );
     
     // 请求参数
@@ -23,9 +25,9 @@
     $sign = md5($post_data['param'].$t.$key.$secret);
     $post_data['sign'] = strtoupper($sign);
 
-    $url = 'https://poll.kuaidi100.com/order/borderapi.do?method=cancel';    // 商家寄件下单取消接口地址
+    $url = 'https://poll.kuaidi100.com/order/borderapi.do?method=price';    // 商家寄件下单价格接口地址
     
-echo '请求参数：<br/><pre>';
+echo '<br/>请求参数：<br/><pre>';
 echo print_r($post_data);
 echo '</pre>';
     
@@ -45,4 +47,5 @@ echo '<br/><br/>返回数据：<br/><pre>';
 echo print_r($data);
 //echo var_dump($data);
 echo '</pre>';
+
 ?>
