@@ -41,8 +41,6 @@
         'needChild' => '0',                // 是否需要子单
         'needBack' => '0',                 // 是否需要回单
         'orderId' => null,                 // 贵司内部自定义的订单编号,需要保证唯一性
-        'height' => null,                  // 打印纸的高度
-        'width' => null,                   // 打印纸的宽度
         'salt' => '',                      // 签名用随机字符串
         'op' => '0',                       // 是否开启订阅功能 0：不开启(默认) 1：开启
         'pollCallBackUrl' => null,         // 如果op设置为1时，pollCallBackUrl必须填入，用于跟踪回调
