@@ -1,7 +1,7 @@
 <?php
     //====================================
     // 商家寄件下单接口
-    // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/page/myinfo/enterprise
+    // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/v2/myinfo/enterprise
     //====================================
     
     // 参数设置
@@ -20,13 +20,22 @@
         'callBackUrl' => '',            // callBackUrl订单信息回调，默认仅支持http
         'cargo' => '',                  // 物品名称
         'payment' => 'SHIPPER',         // 支付方式，SHIPPER: 寄付（默认）。不支持到付
+        'serviceType' => '标准快递',    // 业务类型，默认为标准快递，各快递公司业务类型对照参考：七、业务类型参数表
         'weight' => '0.5',              // 物品总重量KG，不需带单位
         'remark' => '测试',             // 备注
         'salt' => '',                   // 签名用随机字符串
-        'dayType' => '今天',             // 预约日期，例如：今天/明天/后天
+        'dayType' => '今天',            // 预约日期，例如：今天/明天/后天
         'pickupStartTime' => '',        // 预约起始时间（HH:mm），例如：09:00
         'pickupEndTime' => '',          // 预约截止时间（HH:mm），例如：10:00
-        'valinsPay' => null             // 保价额度，单位：元
+        'valinsPay' => null,            // 保价额度，单位：元
+        'passwordSigning' => 'N',       // 是否口令签收，Y：需要 N: 不需要
+        'op' => '0',                    // 是否开启订阅功能 0：不开启(默认) 1：开启
+        'pollCallBackUrl' => null,      // 如果op设置为1时，pollCallBackUrl必须填入，用于跟踪回调
+        'resultv2' => '0',              // 此字段表示开通行政区域解析或地图轨迹功能
+        'returnType' => null,           // 面单返回类型，默认为空
+        'siid' => null,                 // 设备码
+        'tempid' => null,               // 模板编码
+        'printCallBackUrl' => null      // 打印状态回调地址
     );
     
     // 请求参数

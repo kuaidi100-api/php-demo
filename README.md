@@ -63,3 +63,13 @@
 ##### 28、sms.php 短信发送接口示例代码
 
 ##### 29、autonumber.php 智能识别接口示例代码
+
+##### 30、print_order.php 电子面单下单接口V2示例代码
+
+##### 31、print_old.php 电子面单复打接口V2示例代码
+
+##### 32、print_custom.php 自定义打印接口V2示例代码
+
+##### 33、reachable.php 快递可用性接口示例代码
+
+##### 34、ocr.php 快递面单OCR识别接口示例代码

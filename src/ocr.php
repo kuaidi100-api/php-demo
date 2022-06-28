@@ -1,32 +1,31 @@
 <?php
     //====================================
-    // 订单导入获取店铺授权超链接示例代码
+    // 电子面单OCR识别示例代码
     // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/v2/myinfo/enterprise
     //====================================
 
     // 参数设置
     $key = '';                             // 客户授权key
-    $secret = '';                          // 授权secret
     $param = array (
-        'shopType' => '',                  // 店铺类型，TAOBAO：淘宝，JINGDONG：京东，TOUTIAO：抖店，PINDUODUO：拼多多
-        'callbackUrl' => '',               // 回调地址，默认仅支持http
-        'salt' => ''                       // 回调参数sign的加密参数，非空时回调才会有sign参数
+        'image' => '',                     // 图像数据，base64编码，要求base64编码后大小不超过4M,支持jpg/jpeg/png/bmp格式
+        'enableTilt' => false,             // 是否兼容图像倾斜，true：是；false：否，默认不检测，即：false
+        'include' => null,                 // 需要检测识别的面单元素。取值范围：barcode,qrcode,receiver,sender,bulkpen
+        'imageUrl' => null,                // 图片URL。image、imageUrl、pdfUrl三者必填其一，优先顺序：image>imageUrl>pdfUrl
+        'pdfUrl' => null,                  // PDF文件URL。image、imageUrl、pdfUrl三者必填其一，优先顺序：image>imageUrl>pdfUrl
     );
     
-    // 请求参数
+    //请求参数
     $post_data = array();
-    $post_data['param'] = json_encode($param, JSON_UNESCAPED_UNICODE);
     $post_data['key'] = $key;
-    $sign = md5($post_data['param'].$key.$secret);
-    $post_data['sign'] = strtoupper($sign);
+    $post_data['param'] = json_encode($param, JSON_UNESCAPED_UNICODE);
     
-    $url = 'https://api.kuaidi100.com/ent/shop/authorize';    // 订单导入获取店铺授权超链接请求地址
+    $url = 'http://api.kuaidi100.com/elec/detocr';    // 电子面单打印请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
 echo '</pre>';
     
-    // 发送post请求
+    //发送post请求
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_POST, 1);

@@ -1,7 +1,7 @@
 <?php
     //====================================
     // 商家寄件下单价格接口
-    // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/page/myinfo/enterprise
+    // 授权信息可通过链接查看：https://api.kuaidi100.com/manager/v2/myinfo/enterprise
     //====================================
 	
     // 参数设置
