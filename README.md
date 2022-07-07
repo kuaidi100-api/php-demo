@@ -14,23 +14,23 @@
 
 ##### 4、map_subscribe.php 地图轨迹订阅接口示例代码
 
-##### 5、ele_print.php 电子面单打印接口示例代码
+##### 5、ele_print.php 电子面单打印v1接口示例代码(推荐使用v2版本)
 
-##### 6、ele_printold.php 电子面单复打接口示例代码
+##### 6、ele_printold.php 电子面单v1复打接口示例代码
 
-##### 7、ele_img.php 电子面单图片接口示例代码
+##### 7、ele_img.php 电子面单图片v1接口示例代码(推荐使用v2版本)
 
-##### 8、ele_html.php 电子面单HTML接口示例代码
+##### 8、ele_html.php 电子面单HTML v1接口示例代码(推荐使用v2版本)
 
 ##### 9、ele_third_auth.php 第三方电商平台账号授权接口示例代码
 
 ##### 10、ele_cancel.php 电子面单取消接口示例代码
 
-##### 11、cloud_selfprint.php 云打印自定义打印接口示例代码
+##### 11、cloud_selfprint.php 云打印自定义打印v1接口示例代码(推荐使用v2版本)
 
 ##### 12、cloud_fileprint.php 云打印附件打印接口示例代码
 
-##### 13、cloud_img.php 云打印自定义生成图片接口示例代码
+##### 13、cloud_img.php 云打印自定义生成图片v1接口示例代码(推荐使用v2版本)
 
 ##### 14、cloud_devstatus.php 云打印硬件状态接口示例代码
 
