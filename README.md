@@ -73,3 +73,9 @@
 ##### 33、reachable.php 快递可用性接口示例代码
 
 ##### 34、ocr.php 快递面单OCR识别接口示例代码
+
+##### 35、csent_order.php C端寄件下单接口示例代码
+
+##### 36、csent_cancel.php C端寄件下单取消接口示例代码
+
+##### 37、csent_price.php C端寄件下单价格接口示例代码
