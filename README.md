@@ -79,3 +79,13 @@
 ##### 36、csent_cancel.php C端寄件下单取消接口示例代码
 
 ##### 37、csent_price.php C端寄件下单价格接口示例代码
+
+##### 38、bsamecity_price.php 同城寄件-预下单接口示例代码
+
+##### 39、bsamecity_order.php 同城寄件-下单接口示例代码
+
+##### 40、bsamecity_precancel.php 同城寄件-预取消接口示例代码
+
+##### 41、bsamecity_cancel.php 同城寄件-取消接口示例代码
+
+##### 42、bsamecity_addfee.php 同城寄件-加小费接口示例代码
