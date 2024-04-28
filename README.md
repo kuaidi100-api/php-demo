@@ -91,3 +91,5 @@
 ##### 42、bsamecity_addfee.php 同城寄件-加小费接口示例代码
 
 ##### 43、deliverytime.php 快递预估时效查询接口示例代码
+
+##### 44、backorder.php 运单附件查询接口示例代码
