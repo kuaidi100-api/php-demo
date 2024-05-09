@@ -93,3 +93,5 @@
 ##### 43、deliverytime.php 快递预估时效查询接口示例代码
 
 ##### 44、backorder.php 运单附件查询接口示例代码
+
+##### 45、interceptorder.php 订单拦截接口示例代码
