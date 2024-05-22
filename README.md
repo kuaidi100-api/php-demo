@@ -95,3 +95,5 @@
 ##### 44、backorder.php 运单附件查询接口示例代码
 
 ##### 45、interceptorder.php 订单拦截接口示例代码
+
+##### 46、address_resolution.php 地址解析接口示例代码
