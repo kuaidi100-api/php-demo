@@ -9,10 +9,12 @@
     list($msec, $sec) = explode(' ', microtime());
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    // 当前时间戳
     $param = array (                          //此处参数值为示例，请自行替换填充
-            //国家
-            'country'=> 'United States',
+            //国家/地区二字码（不区分大小写），可参考 国家/地区二字码列表附录
+            'code'=> 'US',
             //地址
-            'address'=> '84 Alford Rd, Great Barrington, MA 01230, USA'
+            'address'=> '84 Alford Rd, Great Barrington, MA 01230, USA',
+            //语言码（不区分大小写），可参考 支持的语言列表附录。该字段决定响应的解析结果以哪种语言进行展示
+            'language'=> 'zh'
     );
     
     //请求参数
