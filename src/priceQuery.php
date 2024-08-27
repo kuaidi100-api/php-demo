@@ -10,8 +10,8 @@
     $t = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);    // 当前时间戳
     $param = array (                          //此处参数值为示例，请自行替换填充
             'sendAddr'=>'深圳南山区',
-            'receiveAddr'=>'北京海淀区',
-            'companyName'=>'jd',
+            'recAddr'=>'北京海淀区',
+            'kuaidicom'=>'jd',
             'weight'=>'1',
             
     );
