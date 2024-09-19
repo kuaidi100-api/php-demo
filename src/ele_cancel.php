@@ -30,7 +30,7 @@
     $sign = md5($post_data['param'].$t.$key.$secret);
     $post_data['sign'] = strtoupper($sign);
     
-    $url = 'https://poll.kuaidi100.com/eorderapi.do?method=cancel';    // 电子面单取消请求地址
+    $url = 'https://api.kuaidi100.com/label/order?method=cancel';    // 电子面单取消请求地址
     
 echo '请求参数：<br/><pre>';
 echo print_r($post_data);
