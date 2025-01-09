@@ -19,6 +19,8 @@
         'kuaidicom' => '',                 // 快递公司的编码：https://api.kuaidi100.com/document/5f0ff6e82977d50a94e10237.html
         'kuaidinum' => '',                 // 快递单号
         'orderId' => '',                   // 快递公司订单号，对应下单时返回的kdComOrderNum，如果下单时有返回该字段，则取消时必填，否则可以不填
+        'checkMan' => '',                  // 业务员编码，部分快递公司必填
+        'expType' => '',                   // 产品业务类型，部分快递公司必填
         'reason' => ''                     // 取消原因
     );
     
