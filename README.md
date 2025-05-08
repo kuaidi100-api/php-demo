@@ -52,50 +52,42 @@
 
 ##### 23、bsent_price.php 商家寄件下单价格接口示例代码
 
-##### 24、samecity_auth.php 同城配送账号授权接口示例代码
+##### 24、sms.php 短信发送接口示例代码
 
-##### 25、samecity_order.php 同城配送下单接口示例代码
+##### 25、autonumber.php 智能识别接口示例代码
 
-##### 26、samecity_query.php 同城配送查询订单接口示例代码
+##### 26、print_order.php 电子面单下单接口V2示例代码
 
-##### 27、samecity_cancel.php 同城配送取消下单接口示例代码
+##### 27、print_old.php 电子面单复打接口V2示例代码
 
-##### 28、sms.php 短信发送接口示例代码
+##### 28、print_custom.php 自定义打印接口V2示例代码
 
-##### 29、autonumber.php 智能识别接口示例代码
+##### 29、reachable.php 快递可用性接口示例代码
 
-##### 30、print_order.php 电子面单下单接口V2示例代码
+##### 30、ocr.php 快递面单OCR识别接口示例代码
 
-##### 31、print_old.php 电子面单复打接口V2示例代码
+##### 31、csent_order.php C端寄件下单接口示例代码
 
-##### 32、print_custom.php 自定义打印接口V2示例代码
+##### 32、csent_cancel.php C端寄件下单取消接口示例代码
 
-##### 33、reachable.php 快递可用性接口示例代码
+##### 33、csent_price.php C端寄件下单价格接口示例代码
 
-##### 34、ocr.php 快递面单OCR识别接口示例代码
+##### 34、bsamecity_price.php 同城寄件-预下单接口示例代码
 
-##### 35、csent_order.php C端寄件下单接口示例代码
+##### 35、bsamecity_order.php 同城寄件-下单接口示例代码
 
-##### 36、csent_cancel.php C端寄件下单取消接口示例代码
+##### 36、bsamecity_precancel.php 同城寄件-预取消接口示例代码
 
-##### 37、csent_price.php C端寄件下单价格接口示例代码
+##### 37、bsamecity_cancel.php 同城寄件-取消接口示例代码
 
-##### 38、bsamecity_price.php 同城寄件-预下单接口示例代码
+##### 38、bsamecity_addfee.php 同城寄件-加小费接口示例代码
 
-##### 39、bsamecity_order.php 同城寄件-下单接口示例代码
+##### 39、deliverytime.php 快递预估时效查询接口示例代码
 
-##### 40、bsamecity_precancel.php 同城寄件-预取消接口示例代码
+##### 40、backorder.php 运单附件查询接口示例代码
 
-##### 41、bsamecity_cancel.php 同城寄件-取消接口示例代码
+##### 41、interceptorder.php 订单拦截接口示例代码
 
-##### 42、bsamecity_addfee.php 同城寄件-加小费接口示例代码
+##### 42、address_resolution.php 地址解析接口示例代码
 
-##### 43、deliverytime.php 快递预估时效查询接口示例代码
-
-##### 44、backorder.php 运单附件查询接口示例代码
-
-##### 45、interceptorder.php 订单拦截接口示例代码
-
-##### 46、address_resolution.php 地址解析接口示例代码
-
-##### 47、int_address_resolution.php 国际地址解析接口示例代码
+##### 43、int_address_resolution.php 国际地址解析接口示例代码
